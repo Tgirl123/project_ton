@@ -1,0 +1,445 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    color: black;
+    background-color: whitesmoke;
+}
+
+.links{
+    list-style: none;
+    display: flex;
+}
+
+.links li{
+    padding: 0 20px;
+}
+
+.links li a{
+    transition: 0.2s ease-in-out;
+    color: red;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.links a:hover{
+    color: blue;
+    transition: 0.2s ease-in;
+}
+
+.brand h1{
+    color:black;
+    text-transform: uppercase;
+}
+
+.brand h1 span{
+    color:red;
+}
+
+.open, .close{
+    position: absolute;
+    color: black ;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+    background-color: black;
+}
+
+
+.open{
+    top: 50%;
+    right: 20px;
+    transform: translate(-50%);
+}
+
+.close{
+    top:20px;
+    right: 20px;
+}
+
+
+/* home section */
+
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-left: 100px;
+}
+
+.content{
+    padding-top: 200px;
+}
+
+.home.content{
+    flex:1 1 40rem;
+}
+
+.home .content .hi{
+   font-size: 20px;
+   font-family: "Bacasime Antique", sans-serif;
+   color:red;
+}
+
+.home  .content h3 {
+    font-size: 50px;
+    font-family: "Bacasime Antique", sans-serif;
+    color:black;
+    text-transform: uppercase;
+}
+
+.home  .content h3 span{
+    font-size: 50px;
+    font-family: "Bacasime Antique", sans-serif;
+    color: red ;
+    text-transform: uppercase;
+}
+
+.home  .content .info{
+    font-size: 2rem;
+    font-family: "Bacasime Antique", sans-serif;
+    color: black;
+}
+
+
+.home  .content .text{ 
+    font-size: 1.5rem;
+    color: black ;
+
+}
+    
+  button{
+    padding: 10px 20px;
+    border: none;
+   background-color:crimson;
+   font-weight: bold;
+   color: white;
+   border-radius: 20px;
+   margin-top: 10px;
+  } 
+  
+
+  
+  button:hover{
+    background-color:red; 
+  }
+
+
+
+
+
+ /* Services begin */
+  #Services{
+    margin-top:130px;
+    width:100%;
+    height:fit-content;
+  }
+
+
+  #Services .Services-top{
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    color: red;
+    font-size: 25px;
+  }
+
+   
+ .Services-top h2{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+ }
+
+
+ .Services-top h2 span{
+    color:yellow;
+    text-transform: uppercase;
+ }
+
+ #Services h3 {
+    font-size: 2rem;
+    margin-top: 25px;
+    text-align: center;
+    margin-top: 5px;
+ }
+
+
+
+ #Services-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 4vh;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+ }
+
+
+ .Services-items{
+    border-radius: 15px;
+    width:300px;
+    height: 300px;
+    background: rgb(189, 185, 185);
+    border: 1px solid grey;/*Border style*/
+    box-shadow: 3px 3px 5px 0 black (121, 144 ,144 , 0.626); 
+ }
+
+
+.Services-items p{
+    font-size: 16px;
+    justify-content: center;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* portfolio begins */
+#portfilio{
+    margin-top: 130px;
+    width:100%;
+    height:fit fit-content;
+}
+
+
+
+#portfilio .portfilio-top {
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    color: red;
+    font-size: 25px;
+
+}  
+
+.portfilio-top h2 span{ 
+    color: yellow;
+    text-transform: uppercase;
+}
+
+
+.portfilio-top h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+#portfilio h3{
+text-align: center;
+font-size: 2rem;
+}
+
+
+
+
+.Gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    padding-right: 50px;
+}
+
+.Gallery-items{
+    border: 1px solid grey;
+    padding: 10px;
+}
+
+.Gallery-items img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+ /* Contact begin */
+ #Contact{
+    margin-top:130px;
+    width:100%;
+    height:fit-content;
+  }
+
+
+
+  #Contact .Contact-top {
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    color: red;
+    font-size: 25px;
+
+}  
+
+
+
+.Contact-top h2 span{ 
+    color: yellow;
+    text-transform: uppercase;
+}
+
+
+.Contact-top h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.contact-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #ccc;
+}
+
+
+
+contact-section, .contact-info h1{
+    font-size: 60px;
+    margin-bottom: 24px;
+    font-weight: bold;
+}
+
+contact-section, .contact-info p{
+    font-size: 16px;
+    margin-bottom:24px;
+    font-weight: bold;
+}
+
+.contact-into p i{
+    margin-right: 8px;
+}
+
+.contact-info,.contact-form {
+   flex: 1;
+   padding: 20px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+.contact-form h1, .contact-info h1{
+    margin-top: 0;
+}
+
+.contact-form form {
+    display:flex;
+    flex-direction: column;
+}
+
+.contact-form label{
+    margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea{
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid#ccc;
+    border-radius: 5px;
+}
+
+.contact-form label {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+footer{
+    background-color: black;
+    color: #ccc;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -30px;
+}
+footer h1{
+    font-size: 24px;
+    margin: 0;
+}
+
+.social-icons{
+    margin-top: 20px;
+}
+
+.social-icons a{
+    color:crimson;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer p{
+    font-size: 14px;
+    margin: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#check{display: none;}
+@media screen and (max-width :610px){
+.links{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:80%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: black;
+    transition: all 0.2s ease-in;
+}
+
+.links li{margin-top: 40px;}
+.links li a{padding: 10px;}
+.open,.close{display: block;}
+#check:checked ~ .links{ right: 0;}
+}
